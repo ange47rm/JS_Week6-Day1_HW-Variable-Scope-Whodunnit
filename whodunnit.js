@@ -1,17 +1,17 @@
 // Episode 1
 
-// const scenario = {
-//     murderer: 'Miss Scarlet',
-//     room: 'Library',
-//     weapon: 'Rope'
-// };                                                  
+const scenario = {
+    murderer: 'Miss Scarlet',
+    room: 'Library',
+    weapon: 'Rope'
+};                                                  
   
-// const declareMurderer = function() {
-//     return `The murderer is ${scenario.murderer}.`;
-// }
+const declareMurderer = function() {
+    return `The murderer is ${scenario.murderer}.`;
+}
   
-// const verdict = declareMurderer();                  
-//   console.log(verdict);
+const verdict = declareMurderer();                  
+  console.log(verdict);
 
 // EXPLANATION:
 // Scenario defined using a const type variable. 
@@ -22,19 +22,19 @@
 
 // Episode 2
 
-// const murderer = 'Professor Plum';
+const murderer = 'Professor Plum';
 
-// const changeMurderer = function() {
-//   murderer = 'Mrs. Peacock';
-// }
+const changeMurderer = function() {
+  murderer = 'Mrs. Peacock';
+}
 
-// const declareMurderer = function() {               
-//   return `The murderer is ${murderer}.`;
-// }
+const declareMurderer = function() {               
+  return `The murderer is ${murderer}.`;
+}
 
-// changeMurderer();                                   
-// const verdict = declareMurderer();                  
-// console.log(verdict);
+changeMurderer();                                   
+const verdict = declareMurderer();                  
+console.log(verdict);
 
 // EXPLANATION:
 // The murderer is hardcoded to be Professor Plum using a const variable.
@@ -45,18 +45,18 @@
 
 // Episode 3
 
-// let murderer = 'Professor Plum';
+let murderer = 'Professor Plum';
 
-// const declareMurderer = function() {
-//   let murderer = 'Mrs. Peacock';
-//   return `The murderer is ${murderer}.`;
-// }
+const declareMurderer = function() {
+  let murderer = 'Mrs. Peacock';
+  return `The murderer is ${murderer}.`;
+}
 
-// const firstVerdict = declareMurderer();
-// console.log('First Verdict: ', firstVerdict);
+const firstVerdict = declareMurderer();
+console.log('First Verdict: ', firstVerdict);
 
-// const secondVerdict = `The murderer is ${murderer}.`;
-// console.log('Second Verdict: ', secondVerdict);
+const secondVerdict = `The murderer is ${murderer}.`;
+console.log('Second Verdict: ', secondVerdict);
 
 // EXPLANATION:
 // Professor Plum is declared to be the murderer, this is OUTSIDE of the declareMurderer anonymous function though.
@@ -68,18 +68,18 @@
 
 // Episode 4
 
-// let suspectOne = 'Miss Scarlet';
-// let suspectTwo = 'Professor Plum';
-// let suspectThree = 'Mrs. Peacock';
+let suspectOne = 'Miss Scarlet';
+let suspectTwo = 'Professor Plum';
+let suspectThree = 'Mrs. Peacock';
 
-// const declareAllSuspects = function() {
-//   let suspectThree = 'Colonel Mustard';
-//   return `The suspects are ${suspectOne}, ${suspectTwo}, ${suspectThree}.`;
-// }
+const declareAllSuspects = function() {
+  let suspectThree = 'Colonel Mustard';
+  return `The suspects are ${suspectOne}, ${suspectTwo}, ${suspectThree}.`;
+}
 
-// const suspects = declareAllSuspects();
-// console.log(suspects);
-// console.log(`Suspect three is ${suspectThree}.`);
+const suspects = declareAllSuspects();
+console.log(suspects);
+console.log(`Suspect three is ${suspectThree}.`);
 
 // EXPLANATION:
 // declareAllSuspects function sees all 3 previously declared suspects, however it alters the value of suspect 3. Whatever this is, this function makes it Colonel Mustard.
@@ -91,23 +91,23 @@
 
 // Episode 5
 
-// const scenario = {
-//     murderer: 'Miss Scarlet',
-//     room: 'Kitchen',
-//     weapon: 'Candle Stick'
-// };
+const scenario = {
+    murderer: 'Miss Scarlet',
+    room: 'Kitchen',
+    weapon: 'Candle Stick'
+};
   
-// const changeWeapon = function(newWeapon) {
-//     scenario.weapon = newWeapon;
-// }
+const changeWeapon = function(newWeapon) {
+    scenario.weapon = newWeapon;
+}
   
-// const declareWeapon = function() {
-//     return `The weapon is the ${scenario.weapon}.`;
-// }
+const declareWeapon = function() {
+    return `The weapon is the ${scenario.weapon}.`;
+}
   
-// changeWeapon('Revolver');
-// const verdict = declareWeapon();
-// console.log(verdict);
+changeWeapon('Revolver');
+const verdict = declareWeapon();
+console.log(verdict);
 
 // EXPLANATION:
 // Scenario defined using a const type variable. Scenario is an object with keys.
@@ -119,25 +119,25 @@
 
 // Episode 6
 
-// let murderer = 'Colonel Mustard';
+let murderer = 'Colonel Mustard';
 
-// const changeMurderer = function() {
-//     murderer = 'Mr. Green';
+const changeMurderer = function() {
+    murderer = 'Mr. Green';
   
-//     const plotTwist = function() {
-//       murderer = 'Mrs. White';
-//     }
-                                                            // Note: THIS WAS A BIT CONFUSING
-//     plotTwist();                             
-// }
+    const plotTwist = function() {
+      murderer = 'Mrs. White';
+    }
+                                                            Note: THIS WAS A BIT CONFUSING
+    plotTwist();                             
+}
 
-// const declareMurderer = function () {
-//   return `The murderer is ${murderer}.`;
-// }
+const declareMurderer = function () {
+  return `The murderer is ${murderer}.`;
+}
 
-// changeMurderer();
-// const verdict = declareMurderer();
-// console.log(verdict);
+changeMurderer();
+const verdict = declareMurderer();
+console.log(verdict);
 
 // EXPLANATION:
 // When function changeMurderer is run, this overwrites the murderer from Colonel Mustard to Mr. Green for starters.
@@ -149,31 +149,31 @@
 
 // Episode 7
 
-// let murderer = 'Professor Plum';
+let murderer = 'Professor Plum';
 
-// const changeMurderer = function() {
-//   murderer = 'Mr. Green';
+const changeMurderer = function() {
+  murderer = 'Mr. Green';
 
-//   const plotTwist = function() {
-//     let murderer = 'Colonel Mustard';
+  const plotTwist = function() {
+    let murderer = 'Colonel Mustard';
 
-//     const unexpectedOutcome = function() {
-//       murderer = 'Miss Scarlet';
-//     }
+    const unexpectedOutcome = function() {
+      murderer = 'Miss Scarlet';
+    }
 
-//     unexpectedOutcome();
-//   }
+    unexpectedOutcome();
+  }
 
-//   plotTwist();
-// }
+  plotTwist();
+}
 
-// const declareMurderer = function() {
-//   return `The murderer is ${murderer}.`;
-// }
+const declareMurderer = function() {
+  return `The murderer is ${murderer}.`;
+}
 
-// changeMurderer();
-// const verdict = declareMurderer();
-// console.log(verdict);
+changeMurderer();
+const verdict = declareMurderer();
+console.log(verdict);
 
 // EXPLANATION:
 // When function changeMurderer is run, it initially changes the murderer from Professor Plum to Mr. Green.
@@ -188,40 +188,40 @@
 
 // Episode 8
 
-// const scenario = {
-//     murderer: 'Mrs. Peacock',
-//     room: 'Conservatory',
-//     weapon: 'Lead Pipe'
-// };
+const scenario = {
+    murderer: 'Mrs. Peacock',
+    room: 'Conservatory',
+    weapon: 'Lead Pipe'
+};
   
-// const changeScenario = function() {
-//     scenario.murderer = 'Mrs. Peacock';
-//     scenario.room = 'Dining Room';
+const changeScenario = function() {
+    scenario.murderer = 'Mrs. Peacock';
+    scenario.room = 'Dining Room';
   
-//     const plotTwist = function(room) {
-//       if (scenario.room === room) {
-//         scenario.murderer = 'Colonel Mustard';
-//       }
+    const plotTwist = function(room) {
+      if (scenario.room === room) {
+        scenario.murderer = 'Colonel Mustard';
+      }
   
-//     const unexpectedOutcome = function(murderer) {
-//         if (scenario.murderer === murderer) {
-//           scenario.weapon = 'Candle Stick';
-//         }
-//     }
+    const unexpectedOutcome = function(murderer) {
+        if (scenario.murderer === murderer) {
+          scenario.weapon = 'Candle Stick';
+        }
+    }
   
-//     unexpectedOutcome('Colonel Mustard');
-//     }
+    unexpectedOutcome('Colonel Mustard');
+    }
   
-//     plotTwist('Dining Room');
-// }
+    plotTwist('Dining Room');
+}
   
-// const declareWeapon = function() {
-//     return `The weapon is ${scenario.weapon}.`
-// }
+const declareWeapon = function() {
+    return `The weapon is ${scenario.weapon}.`
+}
   
-//   changeScenario();
-//   const verdict = declareWeapon();
-//   console.log(verdict);
+  changeScenario();
+  const verdict = declareWeapon();
+  console.log(verdict);
 
 // EXPLANATION:
 // Scenario defined using a const type variable. Scenario is an object with keys.
