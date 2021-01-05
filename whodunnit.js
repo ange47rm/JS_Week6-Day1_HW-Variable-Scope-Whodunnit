@@ -127,7 +127,7 @@ const changeMurderer = function() {
     const plotTwist = function() {
       murderer = 'Mrs. White';
     }
-                                                            Note: THIS WAS A BIT CONFUSING
+                                                            // Note: THIS WAS A BIT CONFUSING
     plotTwist();                             
 }
 
